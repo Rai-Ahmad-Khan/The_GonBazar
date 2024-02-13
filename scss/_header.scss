@@ -1,0 +1,64 @@
+header {
+    .upper-header {
+        display: grid;
+        grid-template-columns: 240px auto 240px;
+        align-items: center;
+        justify-items: center;
+        height: 160px;
+        .social-icons {
+            font-size: 24px; 
+            i {
+            margin: 10px; 
+            }  
+        }
+        .clickables {
+            i {
+                margin: 12px; 
+            }  
+        }
+        
+    }
+  .lower-header-bg {
+        background-color: #ff4f29;
+        height: 54px;
+    .lower-header {
+        
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-containner {
+            position: relative;
+            display: inline-block;
+            i {
+                position: absolute;
+                left: 10px;
+                top: 35%;
+                color: #e2dfdf;
+                
+            }
+            input {
+                background:linear-gradient(to right, rgba(255, 255, 255, 0.4) , rgba(255, 255, 255, 0.4));
+                border: none;
+                padding: 18px 30px;
+                font-size: 16px;
+                font-weight: bold;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        
+        a {
+            color: #ffff;
+            font-weight:bold ;
+            transition: 0.5s ease;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+  }
+}

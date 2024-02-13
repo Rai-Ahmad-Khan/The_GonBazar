@@ -1,0 +1,83 @@
+footer {
+
+    background-color: #ebebeb;
+    
+    .footer-content {   
+
+        display: grid;
+        grid-template-columns: 321px 405px 166px 154px;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            li {
+                padding: 30px 0 5px 10px;
+                display: flex;
+                align-items: center;
+                grid-gap: 7px;
+                .circle {
+                    border-radius: 50%;
+                    background-color: black;
+                    height: 35px;
+                    width: 35px;
+                    position: relative;
+                    display: inline-block;
+                    &:hover {
+                       background-color: #ff4f29;
+                    }
+                }
+                i {
+                    font-size: 25px;
+                    border-radius: 50%;
+                    color: #ebebeb;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }  
+            }
+            p {
+                font-size: 12px;
+                margin: 0 0 5px 15px;
+            }
+            
+        }
+        
+        .news-letter {
+            padding: 30px;
+            text-align: center;
+            background-color: #ffff;
+            span {
+                color: #ff4f29;
+            }
+            p {
+                padding: 40px 0 40px 0;
+            }
+            input {
+                padding: 15px;
+                width: 270px;
+                height: 40px;
+                font-weight: bold;
+                color: black;
+                background-color: #ebebeb;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .footer-menu {
+            margin: 30px 0 0 40px;
+        }
+
+        .site-maps {
+            margin: 30px 0 0 30px;
+        }
+    }
+    
+}
